@@ -23,7 +23,8 @@ make CFLAGS="$RPM_OPT_FLAGS"
 rm -rf $RPM_BUILD_ROOT
 
 mkdir -p $RPM_BUILD_ROOT/usr/{bin,share/man/man{1,4}}
-install -s html2pdbtxt pdbtxt2html txt2pdbdoc $RPM_BUILD_ROOT/usr/bin
+install html2pdbtxt pdbtxt2html $RPM_BUILD_ROOT/usr/bin
+install -s txt2pdbdoc $RPM_BUILD_ROOT/usr/bin
 
 cp pdbtxt2html $RPM_BUILD_ROOT/usr/bin
 cp txt2pdbdoc $RPM_BUILD_ROOT/usr/bin
