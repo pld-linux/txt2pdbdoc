@@ -1,0 +1,30 @@
+diff -Naur txt2pdbdoc-1.2.1.org/config/config.mk txt2pdbdoc-1.2.1/config/config.mk
+--- txt2pdbdoc-1.2.1.org/config/config.mk	Thu Nov  5 01:33:23 1998
++++ txt2pdbdoc-1.2.1/config/config.mk	Mon Dec 14 23:15:33 1998
+@@ -71,7 +71,7 @@
+ #	MKDIR	Command used to create a directory.
+ ##
+ INSTALL=	$(ROOT)/install-sh
+-I_ROOT=		/usr/local/txt2pdbdoc
++I_ROOT=		/usr
+ I_BIN=		$(I_ROOT)/bin
+ I_MAN=		$(I_ROOT)/man
+ I_OWNER=	-o bin
+diff -Naur txt2pdbdoc-1.2.1.org/html2pdbtxt txt2pdbdoc-1.2.1/html2pdbtxt
+--- txt2pdbdoc-1.2.1.org/html2pdbtxt	Thu Nov  5 05:09:43 1998
++++ txt2pdbdoc-1.2.1/html2pdbtxt	Mon Dec 14 23:15:42 1998
+@@ -1,4 +1,4 @@
+-#! /usr/local/bin/perl
++#! /usr/bin/perl
+ ##
+ #	HTML to Doc Text converter for 3Com PalmPilots
+ #	html2pdbtxt
+diff -Naur txt2pdbdoc-1.2.1.org/pdbtxt2html txt2pdbdoc-1.2.1/pdbtxt2html
+--- txt2pdbdoc-1.2.1.org/pdbtxt2html	Thu Nov  5 05:10:08 1998
++++ txt2pdbdoc-1.2.1/pdbtxt2html	Mon Dec 14 23:15:58 1998
+@@ -1,4 +1,4 @@
+-#! /usr/local/bin/perl
++#! /usr/bin/perl
+ ##
+ #	Doc Text tp HTML converted for 3Com PalmPilots
+ #	pdbtxt2html
