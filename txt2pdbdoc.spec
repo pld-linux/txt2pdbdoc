@@ -28,10 +28,10 @@ install -s html2pdbtxt pdbtxt2html txt2pdbdoc $RPM_BUILD_ROOT/usr/bin
 cp pdbtxt2html $RPM_BUILD_ROOT/usr/bin
 cp txt2pdbdoc $RPM_BUILD_ROOT/usr/bin
 
-install man/man1/*.1 $RPM_BUILD_ROOT/usr/share/man/man1
-install man/man4/*.4 $RPM_BUILD_ROOT/usr/share/man/man4
+install man/man1/*.1 $RPM_BUILD_ROOT%{_mandir}/man1
+install man/man4/*.4 $RPM_BUILD_ROOT%{_mandir}/man4
 
-gzip -9nf $RPM_BUILD_ROOT/usr/share/man/man?/* \
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man?/* \
 	AUTHORS Changes README
 
 %clean
@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) /usr/bin/*
-/usr/share/man/man[14]/*
+%{_mandir}/man[14]/*
 
 %changelog
 * Tue May 11 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
