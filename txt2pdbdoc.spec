@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 * Tue May 11 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [1.2.1-2]
 - rewrited to PLD coding style,
-- now package is FHS 2.0 compliat.
+- now package is FHS 2.0 compliant.
 
 * Tue Dec 15 1998 Avi Alkalay <avi@br.ibm.com>
 - first release in rpm package.
