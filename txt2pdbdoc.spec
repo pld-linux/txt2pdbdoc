@@ -8,7 +8,7 @@ Group(pl):	Narzêdzia/Tekst
 Source:		ftp://shell3.ba.best.com/pub/pjl/software/%{name}-%{version}.tar.gz
 URL:		http://www.best.com/~pjl/software.html
 Patch:		txt2pdbdoc.patch
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Converts text or HTML files to PalmPilot's E-Book/DOC file, or vice-versa.
