@@ -21,12 +21,10 @@ make CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man{1,4}}
 
-mkdir -p $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man{1,4}}
-install -s html2pdbtxt pdbtxt2html txt2pdbdoc $RPM_BUILD_ROOT%{_bindir}
-
-cp pdbtxt2html $RPM_BUILD_ROOT%{_bindir}
-cp txt2pdbdoc $RPM_BUILD_ROOT%{_bindir}
+install html2pdbtxt pdbtxt2html $RPM_BUILD_ROOT%{_bindir}
+install -s txt2pdbdoc $RPM_BUILD_ROOT%{_bindir}
 
 install man/man1/*.1 $RPM_BUILD_ROOT%{_mandir}/man1
 install man/man4/*.4 $RPM_BUILD_ROOT%{_mandir}/man4
