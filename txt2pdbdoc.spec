@@ -19,7 +19,7 @@ Converts text or HTML files to PalmPilot's E-Book/DOC file, or vice-versa.
 %patch -p1
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
