@@ -35,13 +35,12 @@ install txt2pdbdoc $RPM_BUILD_ROOT%{_bindir}
 install man/man1/*.1 $RPM_BUILD_ROOT%{_mandir}/man1
 install man/man4/*.4 $RPM_BUILD_ROOT%{_mandir}/man4
 
-gzip -9nf AUTHORS Changes README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS Changes README
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man[14]/*
