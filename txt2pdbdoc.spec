@@ -5,9 +5,6 @@ Version:	1.2.1
 Release:	6
 License:	GPL
 Group:		Applications/Text
-Group(de):	Applikationen/Text
-Group(fr):	Utilitaires/Texte
-Group(pl):	Aplikacje/Tekst
 Source0:	ftp://shell3.ba.best.com/pub/pjl/software/%{name}-%{version}.tar.gz
 URL:		http://www.best.com/~pjl/software.html
 Patch0:		%{name}.patch
