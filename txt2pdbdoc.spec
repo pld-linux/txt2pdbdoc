@@ -6,6 +6,7 @@ Release:	6
 License:	GPL
 Group:		Applications/Text
 Source0:	ftp://shell3.ba.best.com/pub/pjl/software/%{name}-%{version}.tar.gz
+# Source0-md5:	76768cbb5dcc06b4bcf90226d96ca618
 URL:		http://www.best.com/~pjl/software.html
 Patch0:		%{name}.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
