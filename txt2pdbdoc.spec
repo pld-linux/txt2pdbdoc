@@ -3,7 +3,8 @@ Name:		txt2pdbdoc
 Version:	1.2.1
 Release:	3
 Copyright:	GPL
-Group:		Applications/Productivity
+Group:		Utilities/Text
+Group(pl):	Narzêdzia/Tekst
 Source:		ftp://shell3.ba.best.com/pub/pjl/software/%{name}-%{version}.tar.gz
 URL:		http://www.best.com/~pjl/software.html
 Patch:		txt2pdbdoc.patch
