@@ -23,8 +23,7 @@ make CFLAGS="$RPM_OPT_FLAGS"
 rm -rf $RPM_BUILD_ROOT
 
 mkdir -p $RPM_BUILD_ROOT/usr/{bin,share/man/man{1,4}}
-install html2pdbtxt pdbtxt2html $RPM_BUILD_ROOT/usr/bin
-install -s txt2pdbdoc $RPM_BUILD_ROOT/usr/bin
+install -s html2pdbtxt pdbtxt2html txt2pdbdoc $RPM_BUILD_ROOT/usr/bin
 
 cp pdbtxt2html $RPM_BUILD_ROOT/usr/bin
 cp txt2pdbdoc $RPM_BUILD_ROOT/usr/bin
@@ -48,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 * Tue May 11 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [1.2.1-2]
 - rewrited to PLD coding style,
-- now package is FHS 2.0 compiliat.
+- now package is FHS 2.0 compliat.
 
 * Tue Dec 15 1998 Avi Alkalay <avi@br.ibm.com>
 - first release in rpm package.
