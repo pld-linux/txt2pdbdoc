@@ -1,13 +1,14 @@
 Summary:	Converts Text or HTML to PalmPilots's PDB/DOC file format
 Name:		txt2pdbdoc
 Version:	1.2.1
-Release:	3
-Copyright:	GPL
+Release:	4
+License:	GPL
 Group:		Utilities/Text
+Group(fr):	Utilitaires/Texte
 Group(pl):	Narzêdzia/Tekst
-Source:		ftp://shell3.ba.best.com/pub/pjl/software/%{name}-%{version}.tar.gz
+Source0:	ftp://shell3.ba.best.com/pub/pjl/software/%{name}-%{version}.tar.gz
 URL:		http://www.best.com/~pjl/software.html
-Patch:		txt2pdbdoc.patch
+Patch0:		txt2pdbdoc.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
