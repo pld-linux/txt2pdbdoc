@@ -1,7 +1,7 @@
 Summary:	Converts Text or HTML to PalmPilots's PDB/DOC file format
 Name:		txt2pdbdoc
 Version:	1.2.1
-Release:	2
+Release:	3
 Copyright:	GPL
 Group:		Applications/Productivity
 Source:		ftp://shell3.ba.best.com/pub/pjl/software/%{name}-%{version}.tar.gz
@@ -22,7 +22,7 @@ make CFLAGS="$RPM_OPT_FLAGS"
 %install
 rm -rf $RPM_BUILD_ROOT
 
-mkdir -p $RPM_BUILD_ROOT/usr/{bin,share/man/man{1,4}}
+mkdir -p $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man{1,4}}
 install -s html2pdbtxt pdbtxt2html txt2pdbdoc $RPM_BUILD_ROOT%{_bindir}
 
 cp pdbtxt2html $RPM_BUILD_ROOT%{_bindir}
