@@ -23,10 +23,10 @@ make CFLAGS="$RPM_OPT_FLAGS"
 rm -rf $RPM_BUILD_ROOT
 
 mkdir -p $RPM_BUILD_ROOT/usr/{bin,share/man/man{1,4}}
-install -s html2pdbtxt pdbtxt2html txt2pdbdoc $RPM_BUILD_ROOT/usr/bin
+install -s html2pdbtxt pdbtxt2html txt2pdbdoc $RPM_BUILD_ROOT%{_bindir}
 
-cp pdbtxt2html $RPM_BUILD_ROOT/usr/bin
-cp txt2pdbdoc $RPM_BUILD_ROOT/usr/bin
+cp pdbtxt2html $RPM_BUILD_ROOT%{_bindir}
+cp txt2pdbdoc $RPM_BUILD_ROOT%{_bindir}
 
 install man/man1/*.1 $RPM_BUILD_ROOT%{_mandir}/man1
 install man/man4/*.4 $RPM_BUILD_ROOT%{_mandir}/man4
@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%attr(755,root,root) /usr/bin/*
+%attr(755,root,root) %{_bindir}/*
 %{_mandir}/man[14]/*
 
 %changelog
