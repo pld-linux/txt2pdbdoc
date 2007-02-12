@@ -1,5 +1,5 @@
 Summary:	Converts Text or HTML to PalmPilot's PDB/DOC file format
-Summary(pl):	Konwerter tekstu i HTML na format PalmPilotów - PDB/DOC
+Summary(pl.UTF-8):   Konwerter tekstu i HTML na format PalmPilotÃ³w - PDB/DOC
 Name:		txt2pdbdoc
 Version:	1.2.1
 Release:	6
@@ -15,8 +15,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Converts text or HTML files to PalmPilot's E-Book/DOC file, or
 vice-versa.
 
-%description -l pl
-Konwerter plików tekstowych i HTML na pliki E-Book/DOC PalmPilotów i
+%description -l pl.UTF-8
+Konwerter plikÃ³w tekstowych i HTML na pliki E-Book/DOC PalmPilotÃ³w i
 odwrotnie.
 
 %prep
